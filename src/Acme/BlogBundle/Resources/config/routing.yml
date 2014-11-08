@@ -1,0 +1,3 @@
+acme_blog_homepage:
+    path:     /blog/{slug}
+    defaults: { _controller: AcmeBlogBundle:Blog:show }

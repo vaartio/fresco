@@ -1,0 +1,19 @@
+acme_store_create:
+    path:     /products
+    defaults: { _controller: AcmeStoreBundle:Default:showAll }
+
+acme_store_create:
+    path:     /product/create/{name}
+    defaults: { _controller: AcmeStoreBundle:Default:create }
+
+acme_store_show:
+    path: /product/show/{id}
+    defaults: { _controller: AcmeStoreBundle:Default:show }
+
+acme_store_update:
+    path: /product/update/{id}
+    defaults: { _controller: AcmeStoreBundle:Default:update }
+
+acme_store_delete:
+    path: /product/delete/{id}
+    defaults: { _controller: AcmeStoreBundle:Default:delete }

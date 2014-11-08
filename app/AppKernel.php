@@ -17,6 +17,8 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Acme\TestBundle\AcmeTestBundle(),
+            new Acme\BlogBundle\AcmeBlogBundle(),
+            new Acme\StoreBundle\AcmeStoreBundle(),
         );
 
         $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();

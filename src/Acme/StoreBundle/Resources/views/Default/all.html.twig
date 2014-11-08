@@ -1,0 +1,7 @@
+{% extends "AcmeStoreBundle:Default:index.html.twig" %}
+
+{% block body %}
+    {% for product in products %}
+        {{ include('AcmeStoreBundle:Default:product.html.twig', { 'product': product }) }}
+    {% endfor %}
+{% endblock %}
