@@ -39,8 +39,6 @@ class Task
   protected $dueDate;
 
   /**
-   * @var Category
-   *
    * @Assert\Type(type="Acme\TaskBundle\Entity\Category")
    * @Assert\Valid()
    */
@@ -84,23 +82,6 @@ class Task
   public function setDueDate(\DateTime $dueDate = null)
   {
     $this->dueDate = $dueDate;
-
-    return $this;
-  }
-
-  /**
-   * @return Category
-   */
-  public function getCategory() {
-    return $this->category;
-  }
-
-  /**
-   * @param Category $category
-   * @return Task
-   */
-  public function setCategory(Category $category) {
-    $this->category = $category;
 
     return $this;
   }

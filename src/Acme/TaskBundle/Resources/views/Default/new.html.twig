@@ -1,2 +1,18 @@
-<h1>Taskiformi</h1>
-{{ form(form) }}
+{% form_theme form 'AcmeTaskBundle:Form:fields.html.twig' %}
+
+{# form_theme form 'AcmeTaskBundle:Form:fields.html.twig' 'AcmeTaskBundle:Form:fields2.html.twig' #}
+<h1>Taskiformi2</h1>
+{# form(form) #}
+{# form(form, {'attr': {'novalidate': 'novalidate'}}) #}
+{{ form_start(form) }}
+  {{ form_errors(form) }}
+  <fieldset>
+    {{ form_row(form.task) }}
+    {{ form_row(form.dueDate) }}
+  </fieldset>
+  <fieldset>
+    <h3>{{ form_label(form.category) }}</h3>
+    {{ form_errors(form.category) }}
+    {{ form_widget(form.category) }}
+  </fieldset>
+{{ form_end(form) }}
