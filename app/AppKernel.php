@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Acme\BlogBundle\AcmeBlogBundle(),
             new Acme\StoreBundle\AcmeStoreBundle(),
             new Acme\TaskBundle\AcmeTaskBundle(),
+            new Acme\SecurityBundle\AcmeSecurityBundle(),
         );
 
         $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
