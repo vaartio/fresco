@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Acme\StoreBundle\AcmeStoreBundle(),
             new Acme\TaskBundle\AcmeTaskBundle(),
             new Acme\SecurityBundle\AcmeSecurityBundle(),
+            new Layer\ShopBundle\LayerShopBundle(),
         );
 
         $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();

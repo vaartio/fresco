@@ -50,13 +50,16 @@ security:
         login_firewall:
             pattern: ^/login$
             anonymous: ~
-        secured_area:
-            pattern:   ^/
+        layerdev:
+            pattern: ^/
+            anonymous: ~
+        #secured_area:
+        #    pattern:   ^/
             #http_basic:
             #  realm: "Secured Demo Area"
-            form_login:
-              login_path: login
-              check_path: login_check
+        #    form_login:
+        #      login_path: login
+        #      check_path: login_check
 
     # with these settings you can restrict or allow access for different parts
     # of your application based on roles, ip, host or methods
