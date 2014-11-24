@@ -1,0 +1,5 @@
+services:
+    layer_shop.form.type.product:
+        class: Layer\ShopBundle\Form\Type\ProductType
+        tags:
+            - { name: form.type, alias: product }

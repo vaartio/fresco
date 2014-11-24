@@ -1,0 +1,23 @@
+Layer\ShopBundle\Entity\OrderEntry:
+    type: entity
+    table: order_entry
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+    manyToOne:
+        order:
+            targetEntity: Order
+            inversedBy: entries
+            joinColumn:
+                name: order_id
+                referencedColumnName: id
+        product:
+            targetEntity: Product
+            joinColumn:
+                name: product_id
+                referencedColumnName: id
+    lifecycleCallbacks: {  }

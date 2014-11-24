@@ -1,0 +1,17 @@
+Layer\ShopBundle\Entity\Order:
+    type: entity
+    table: order
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        ordererId:
+            type: integer
+    oneToMany:
+        entries:
+            targetEntity: OrderEntry
+            mappedBy: order
+    lifecycleCallbacks: {  }

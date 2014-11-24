@@ -1,0 +1,34 @@
+layer_product_form_new:
+    path:     /product/new
+    defaults: { _controller: LayerShopBundle:Product:form }
+    methods:  [GET, POST]
+
+layer_product_form_edit:
+    path:     /product/edit/{productId}
+    defaults: { _controller: LayerShopBundle:Product:form }
+    methods:  [GET, POST]
+
+layer_order_create:
+    path:     /order
+    defaults: { _controller: LayerShopBundle:Order:create }
+    methods:  [POST]
+
+layer_order_read:
+    path:     /order/{orderId}
+    defaults: { _controller: LayerShopBundle:Order:read }
+    methods:  [GET]
+
+layer_order_update:
+    path:     /order/{orderId}
+    defaults: { _controller: LayerShopBundle:Order:update }
+    methods:  [POST]
+
+layer_order_delete:
+    path:     /order/{orderId}
+    defaults: { _controller: LayerShopBundle:Order:delete }
+    methods:  [DELETE]
+
+layer_order_form:
+    path:     /order/new
+    defaults: { _controller: LayerShopBundle:Order:form }
+    methods:  [GET, POST]
